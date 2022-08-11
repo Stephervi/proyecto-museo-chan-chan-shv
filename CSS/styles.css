@@ -1,0 +1,1913 @@
+*{
+    margin: 0 ;
+    padding: 0 ;
+    box-sizing: border-box;
+    /* border: 1px solid aquamarine */
+}
+
+
+/* -------------AJUSTES GENERALES--------------*/
+body{
+    font-family: 'Roboto', sans-serif;
+
+}
+
+/* ----------------AJUSTES BODY---------------------- */
+
+
+/* ESTILOS DE TEXTO */
+
+/* Textos de secciones */
+
+.nombre-seccion-light {
+    color: darkred;
+    font-weight:bold; 
+    font-size: 16px}
+.nombre-seccion-dark {
+    color: #ffffff;
+    font-weight: lighter;
+    font-size: 16px}
+.raya-seccion-light {
+    background-color: darkred;
+    height: 3px;
+    width: 35%;
+    line-height: 1px;
+    padding-left: 60px;
+}
+.raya-secciones-dark {
+    background-color: rgb(255, 255, 255);
+    height: 3px;
+    width: 35%;
+    line-height: 1px;
+    padding-left: 60px;
+}
+
+/* RESPONSIVE ESTILOS */
+
+@media screen and (min-width:1200px) {
+    .raya-seccion-light {
+        background-color: darkred;
+        height: 3px;
+        width: 10%;
+        line-height: 1px;
+        padding-left: 60px;
+        margin-top: 16px;
+    }
+    .raya-secciones-dark {
+        background-color: rgb(255, 255, 255);
+        height: 3px;
+        width: 10%;
+        line-height: 1px;
+        padding-left: 60px;
+        margin-top: 16px;
+    }
+}
+
+
+/* -------------------HEADER------------------------ */
+
+#header {
+    height: 80px;
+    width: 100vw;
+    background-color: #000;
+    display:flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: fixed;
+}
+
+.burguer {
+    width: 30px;
+    background-color: #000;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    border-radius: 4px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* BARRA DE NAVEGACIÓN */
+.nav {
+    display: none;
+}
+
+
+ul {
+    list-style-type: none ;
+    font-size: 1.125rem;
+    display: flex;
+    justify-content: flex-end;
+}
+ul li {
+    display: inline-block;
+    justify-content: space-between;
+    padding: 20px;
+}
+ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+ /* responsive header 1200px */
+
+@media screen and (min-width:1200px) {
+
+#header {
+    background-color: #FFFFFF;
+    height: 95px;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 95px auto;
+    grid-template-columns: 20% auto;
+    grid-template-areas: 
+    "logo navbar";
+    position: fixed; 
+    box-shadow: -1px 5px 16px -3px rgba(0,0,0,0.72);
+    color: #000;
+}
+
+.burguer {
+    display: none;
+}
+
+.nav {
+    display: inline-block;
+    justify-content: right;
+    grid-area: navbar;
+}
+
+.nav a {
+    color: #000;
+}
+
+.nav .contacto a {
+    background-color: #692121;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 10px;
+}
+
+#header .logo {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+    width: 30vw;
+    display: flex;
+    justify-content: flex-start;
+    grid-area: logo;
+    padding-left: 24px;
+}
+
+}
+
+
+/* HERO SECTION */
+
+.hero {
+height: 100vh;
+min-width: 320px;
+background-image: url("../img-museo/img-hero-mobile.png");
+background-color: rgba(17, 17, 17, 0.427);
+background-blend-mode: soft-light;
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+display: flex;
+justify-content: center;
+align-items: flex-end;
+}
+
+.hero__info {
+    width: 80vw;
+    color: #FFFFFF;
+    margin: 80px 0px ;
+}
+
+.hero__titulo {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.hero__subtitulo {
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 1.5;
+    text-align: center;
+}
+
+ /* responsive hero 1200px */
+
+@media screen and (min-width:1200px) {
+
+.hero {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../img-museo/img-hero-section.png");
+    background-color: rgba(17, 17, 17, 0.447);
+    background-size: cover;
+    }
+
+
+.hero__info {
+    width: 100vw;
+    margin: 120px 36px ;
+    padding-right: 600px;
+    overflow: hidden;
+}
+
+.hero__titulo {
+    width: auto;
+    font-size: 34px;
+    text-align: left;
+    margin-left: 64px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.hero__subtitulo {
+    font-size: 26px;
+    margin-left: 64px;
+    text-align: left;
+}
+}
+
+
+
+/* ------------------SECCIONES------------------- */
+
+/* SIGNIFICADO CULTURAL */
+
+#seccion-sc {
+    background-color: #FFFFFF;
+    width: 100vw;
+    padding: 24px;
+    /* border: 1px solid red; */
+
+}
+
+.datos-sc__cita {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 16px;
+}
+
+.datos-sc__cita img {
+    margin: 16px;
+}
+
+.datos-sc__texto {
+    font-size: 18px;
+    text-align: justify;
+}
+
+.datos-sc__texto p{
+    margin-bottom: 20px;
+}
+
+.sc-parrafo-4 {
+display: none;
+}
+
+.boton-ver-mas {
+    color:rgb(255, 255, 255);
+    background-color: rgb(105, 36, 36);
+    border: solid rgb(56, 22, 22) 1px;
+    border-radius: 8px;
+    font-family: sans-serif;
+    font-weight: 200;
+    font-size: 14px;
+    padding: 4px 10px;
+}
+
+ /* responsive significado cultural 1200px */
+
+@media screen and (min-width:1200px) {
+
+    #seccion-sc {
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        padding: 24px;
+    }
+
+    .datos-sc {
+        display: flex;
+        align-items: center;
+        margin: 120px 32px;
+    }
+    
+    
+    .datos-sc__cita {
+        width: 50vw;
+        font-size: 38px;
+        padding: 64px;
+    }
+    
+    
+    .datos-sc__texto {
+        width: 50vw;
+    }
+    
+    #seccion-sc button {
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 8px 12px;
+    }
+}
+
+/* HISTORIA */
+
+#seccion-historia {
+
+    background-image: url("../img-museo/img-paisaje-chan-chan.png");
+    background-color: rgb(70, 16, 16);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    color: #FFFFFF;
+    height: 100%;
+    width: 100vw;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+
+
+.datos-sh__primer-bloque {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}  
+
+.sh-img {
+    width: 80%;
+    height: 270px;
+    margin: 16px;
+    background-image: url("../img-museo/vista-muro-chan-chan.jpg");
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.datos-sh__texto-1 h3 {
+    font-size: 18px;
+    text-align: justify;
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+
+.datos-sh__texto-1 p {
+    font-size: 14px;
+    font-weight: lighter;
+    line-height: 1.2;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.datos-sh__segundo-bloque hr {
+    width: 80%;
+}
+
+.datos-sh__segundo-bloque {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sh__cita {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: center;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.sh__cita-bajada {
+    font-size: 14px;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: 16px;
+}
+
+.datos-sh__tercer-bloque h3 {
+    font-size: 18px;
+    text-align: justify;
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+
+.datos-sh__tercer-bloque p {
+    font-size: 14px;
+    font-weight: lighter;
+    line-height: 1.2;
+    text-align: justify;
+    margin-bottom: 16px;
+}
+
+
+    /* responsive historia 1200px */
+
+@media screen and (min-width:1200px) {
+
+#seccion-historia {
+    padding-bottom: 60px;
+}
+
+#seccion-historia .datos-sh {
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    grid-template-rows: 400px 300px 400px;
+    grid-template-areas: 
+    "a b"
+    "c d"
+    "e f";
+}
+
+.datos-sh .datos-sh__primer-bloque {
+    grid-column: 1 / span 3 ;
+    display: flex;
+    flex-direction: row;
+    margin-top: 32px;
+}
+
+.datos-sh__texto-1 {
+    width: 70vw;
+    margin: 40px 64px;
+}
+
+.datos-sh__texto-1 h3 {
+    font-size: 20px;
+}
+
+.datos-sh__texto-1 p {
+    font-size: 16px;
+}
+
+
+.datos-sh .datos-sh__segundo-bloque {
+    grid-column: 1 / span 3 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+}
+
+.sh__cita {
+    font-size: 20px;
+    padding: 0px 200px;
+}
+
+.sh__cita-bajada {
+    font-size: 16px;
+    padding: 16px 200px;
+}
+
+.datos-sh__segundo-bloque hr {
+    width: 30%;
+}
+
+.datos-sh .datos-sh__tercer-bloque {
+    grid-column: 2 / -2 ;
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px ;
+}
+
+.datos-sh .datos-sh__tercer-bloque h3 {
+    font-size: 20px;
+    padding: 0px 64px;
+}
+
+.datos-sh .datos-sh__tercer-bloque p {
+    font-size: 16px;
+    padding: 0px 64px;
+    }
+}
+
+
+
+/* INFOGRAFIAS */
+
+#seccion-infografias {
+    background-color: #2A2828;
+    height: auto;
+    width: 100vw;
+    padding: 24px;
+}
+
+.tarjetas-infografia {
+    height: auto;
+    width: 95vw;
+    margin-bottom: 32px;   
+    padding: 0px 8px;
+    display: flex;
+    overflow-x: scroll;
+}
+
+
+.tarjetas-infografia .card1 {
+    min-width: 250px;
+    height:480px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 24px;
+    margin-right: 8px;
+}
+
+.card__img1 {
+    width: 90%;
+    height: 70%;
+    background-image: url("../img-museo/mapa-expansion-chimu.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card__datos {
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 40%;
+    box-shadow: 0px -4px 15px #2a2828be;
+}
+
+.card__datos h3 {
+    font-size: 18px;
+    margin: 16px 12px;
+    text-align: center;
+}
+
+.card__datos p {
+    font-size: 13px;
+    text-align: justify;
+    padding: 12px 12px;
+}
+
+ /* responsive infografias 1200px */
+
+    @media screen and (min-width:1200px) {
+        .tarjetas-infografia {
+            height: 700px;
+            width: 95vw;
+            display: flex;
+            margin-left: 0px;
+            padding: 0px 32px;
+        }
+        
+        .tarjetas-infografia .card1 {
+            min-width: 75vw;
+            height:auto ;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .card__img1 {
+            width: 55%;
+            height: 85%;
+        }
+            
+        .card__datos {
+            background-color: #FFFFFF;
+            width: 35%;
+            height: 90%;
+            box-shadow: 0px -4px 18px #2a2828be;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+            
+        .card__datos h3 {
+            font-size: 28px;
+            margin: 0px 24px;
+        }
+            
+        .card__datos p {
+            font-size: 18px;
+            padding: 16px 24px;
+        }
+    
+    }
+
+
+/* PRINCIPALES EXHIBICIONES */
+
+#seccion-exhibiciones {
+    width: 100vw;
+    height: auto;
+    background-color:#692121;
+    padding: 24px;
+}
+
+.tarjetas-exhibiciones {
+    height: auto;
+    width: 95vw;
+    margin-bottom: 32px;
+    margin-top: 16px;
+    padding: 0px 8px;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.card2 {
+    min-width:250px;
+    height:480px ;
+    background-color: #160C0C;
+    margin-right: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -3px 3px 10px #2a1d1db6;
+}
+
+.card2__bloque1 {
+    width: 80%;
+    height: 250px;
+    background-image: url("../img-museo/pieza-ceramica-ave.png");
+    background-color: #12121262;
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 16px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.card2__bloque1 p {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+.card2__bloque2 {
+    width: 100%;
+    color: #FFFFFF;
+    padding: 16px;
+}
+
+.card2__bloque2 h3 {
+    color: #FFFFFF;
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+.card2__bloque2 p {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: lighter;
+    text-align: justify;
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+
+ /* responsive exhibiciones 1200px */
+
+@media screen and (min-width:1200px) {
+
+    .tarjetas-exhibiciones {
+        height: 600px;
+        width: 95vw;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0px 16px;
+    }
+    
+    .card2 {
+        min-width:90vh;
+        height:480px ;
+        margin-right: 32px;
+        padding: 16px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .card2__bloque1 {
+        width: 80%;
+        height: 55vh;
+        margin: 20px;
+        display: flex;
+        align-items: flex-end;
+    }
+    
+    .card2__bloque1 p {
+        font-size: 28px;
+    }
+    
+    .card2__bloque2 {
+        height:80% ;
+        padding: 16px;
+    }
+    
+    .card2__bloque2 h3 {
+        font-size: 22px;
+        margin: 16px;
+    }
+    
+    .card2__bloque2 p {
+        font-size: 18px;
+        margin: 16px;
+    }
+
+    .card2__bloque2 button {
+        margin: 16px;
+    }
+}
+
+
+/* --seccion-institucional--*/
+
+#seccion-institucional {
+    width: 100vw;
+    height: auto;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.logos-inst {
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    grid-template-rows: repeat(2,100px);
+    grid-template-areas: 
+    "f1c1 f1c2"
+    "c1f1 c2f2";
+    gap: 8px;
+    justify-content: center;
+}
+
+.logos-inst .img1 {
+    width: 100%;
+    height: auto;
+    background-image: url("../img-museo/logo-mincu.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    grid-area: f1c1;
+    align-items: center;
+}
+.logos-inst .img2 {
+    width: 100%;
+    height: auto;
+    background-image: url("../img-museo/logo-minedu.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-area: f1c2;
+}
+
+.logos-inst .img3 {
+    width: 100%;
+    height: auto;
+    background-image: url("../img-museo/logo-serfor.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-area: c1f1;
+}
+
+.logos-inst .img4 {
+    width: 100%;
+    height: auto;
+    background-image: url("../img-museo/logo-sernanp.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-area: c2f2;
+}
+
+/* responsive institucionales */
+
+@media screen and (min-width:1200px) {
+    #seccion-institucional {
+        width: 100vw;
+        height: auto;
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+    
+    .logos-inst {
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        padding: 0px 64px;
+    }
+    
+    .logos-inst .img1 {
+        background-size: 150px;
+        background-position: center;
+    }
+    .logos-inst .img2 {
+        background-size: 150px;
+    }
+    
+    .logos-inst .img3 {
+        background-size: 180px;
+    }
+    
+    .logos-inst .img4 {
+        background-size: 180px;
+    }
+}
+
+
+
+/* FOOTER */
+
+footer {
+    background-color: #090909;
+    width: 100vw;
+    height: auto;
+}
+
+.nav-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.nav-footer a{
+text-decoration: none;
+font-weight: lighter;
+font-size: 16px;
+color: #FFFFFF;
+margin: 16px 8px;
+}
+
+.footer__redes h3{
+    display: none;
+}
+
+.iconos-redes {
+    background-color: #FFFFFF;
+    color: #000;
+    font-size: 24px;
+    padding: 16px 64px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__suscribete {
+    color: #FFFFFF;
+    height: auto;
+}
+
+.footer__suscribete p {
+font-size: 14px;
+font-weight: lighter;
+margin: 8px 0px;
+}
+
+.footer__suscribete .sus__texto {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 16px;
+}
+
+.campo-correo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.correo__container input{
+    width: 60vw;
+    background-color: #FFFFFF;
+    color: #000;
+    font-size: 12px;
+    padding: 8px;
+    margin-bottom: 16px;
+}
+
+.correo__boton input{
+    width: 100px;
+    height: 40px;
+    background-color: #444444;
+    color: #FFFFFF;
+}
+
+.footer__contacto {
+    display: flex;
+    justify-content: center;
+}
+
+.datos-footer {
+    padding-bottom: 32px;
+}
+
+.datos-footer p {
+    color: #FFFFFF;
+    font-weight: lighter;
+    font-size: 14px;
+    text-align: center;
+    margin: 16px 20px;
+}
+
+/* responsive footer */
+
+@media screen and (min-width:1200px) {
+    
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-footer {
+        width: 50vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 16px 0px;
+    }
+
+    .footer__redes {
+    display: flex;
+    margin: 64px;    
+    }
+
+    .footer__redes h3{
+        display: flex;
+        color: #FFFFFF;
+    }
+    
+    .iconos-redes {
+        background-color: #090909;
+        color: #ffffff;
+        font-size: 24px;
+        padding: 16px 64px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer__suscribete {
+        margin: 0px 48px;
+    }
+
+    .footer__suscribete h4 {
+        font-size: 24px;
+    }
+    
+    .footer__suscribete p {
+        font-size: 18px;
+        margin: 8px 0px;
+    }
+    
+    .correo__container input{
+        width: 30vw;
+        font-size: 16px;
+        padding: 10px 16px;
+    }
+    
+    .correo__boton input{
+        width: 10vw;
+        height: 40px;
+        font-size: 16px;
+    }
+    
+    .datos-footer {
+        padding: 32px 0px;
+    }
+    
+    .datos-footer p {
+        font-size: 18px;
+    }    
+}
+
+
+
+
+/* -----------------------ESTILO TOURS-------------------- */
+
+/* SECCION UBICACION Y HORARIOS */
+
+#body__tours {
+    height: auto;
+    display: grid;
+    grid-template-rows: repeat(7, auto);
+    /* border: 2px solid chartreuse;     */
+}
+
+/* HEADER TOURS */
+
+#header__tours {
+    width: 100vw;
+    height: 80px;
+    background-color: #000;
+    color: #FFFFFF;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 16px;
+}
+
+#header__tours .nav__tours {
+    display: none;
+}
+
+/* Responsive Header_tours */
+
+@media screen and (min-width:1200px) {
+    #header__tours {
+        width: 100vw;
+        height: 95px;
+        background-color: #fff;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 16px;
+    }
+    
+    #header__tours .nav__tours {
+        display: block;
+    }
+
+    .nav__tours a {
+        color: #000;
+    }
+
+    #header__tours .logo {
+        -webkit-filter: invert(100%);
+        filter: invert(100%);
+        width: 30vw;
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 24px;
+    }  
+}
+
+/* UBICACION Y HORARIOS */
+
+#ubicacion {
+    width: 100vw;
+    height: auto;
+    background-color: #692121;
+    padding: 24px;
+    grid-row: 2/3 ;
+}
+
+.ubicacion__contenido {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 0px;
+}
+
+.ubicacion__bloque2 {
+    width: 90vw;
+    height: 65vh;
+    background-color: #C79665;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 16px 0px;
+}
+
+.mapa {
+    width: 80vw;
+    height: 60vh;
+    filter: grayscale(1%) invert(95%) sepia(30%)
+}
+
+.ubicacion__bloque1 {
+    height: auto;
+    color: #FFFFFF;
+    line-height: 2;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ubicacion__bloque1 .geo-icon {
+    color: #FFFFFF;
+    font-size: 30px;
+}
+
+.ubicacion__bloque1 p {
+    font-size: 18px;
+    margin: 16px 48px;
+}
+
+.tabla-precios {
+    width: 100vw;
+    margin: 24px 0px;
+}
+
+.ubicacion__tabla thead {
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+}
+.ubicacion__tabla tbody {
+    text-align: center;
+}
+
+/* Responsive Ubicacion y Horarios */
+
+@media screen and (min-width:1200px) {
+    
+    .ubicacion__contenido {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 24px;
+    }
+    
+    .ubicacion__bloque2 {
+        width: 50%;
+        height: 65vh;
+    }
+    
+    .mapa {
+        width: 95%;
+    }
+    
+    .ubicacion__bloque1 {
+        width: 50%;
+        height: auto;
+    }
+    
+    .ubicacion__bloque1 p {
+        font-size: 22px;
+    }
+    
+
+    .tabla-precios {
+        width:50vw;
+    }
+    
+    .ubicacion__tabla thead {
+        font-size: 22px;
+    }
+    .ubicacion__tabla tbody {
+        font-size: 18px;
+    }
+
+}
+
+
+
+/* TARIFAS */
+
+#tarifas {
+    width: 100vw;
+    height: auto;
+    grid-row: 3/4;
+    margin: 24px 0px;
+}
+
+#tarifas h2 {
+    padding: 0px 24px;
+}
+
+#tarifas hr {
+    margin: 0px 24px;
+}
+
+.tarifas__contenido {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 32px 0px;
+}
+
+.tarifas__tabla {
+    width: 80vw;
+    text-align: center;
+    line-height: 2.5;
+    font-size: 18px;
+    margin-bottom: 32px;
+}
+
+.tarifas__tabla thead .categoria__1 {
+    background-color: rgb(70, 16, 16);
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 8px;
+}
+.tarifas__tabla thead .categoria__2 {
+    background-color: #C89466;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 8px;
+}
+.tarifas__tabla thead .categoria__3 {
+    background-color: rgb(29, 60, 39);
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+.tarifas__tabla td {
+    border-bottom: 1px solid rgb(20, 20, 20);
+}
+
+/* Responsive Tarifas */
+
+@media screen and (min-width:1200px) {
+    
+    .tarifas__contenido {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 16px 100px;
+    }
+    
+    .tarifas__tabla {
+        width: 30%;
+        font-size: 20px;
+        margin-bottom: 32px;
+        padding: 16px;
+    }
+    
+    .tarifas__tabla thead .categoria__1 {
+        font-size: 20px;
+    }
+    .tarifas__tabla thead .categoria__2 {
+        font-size: 20px;
+    }
+    .tarifas__tabla thead .categoria__3 {
+        font-size: 20px;
+    }
+
+}
+
+
+/* OPINIONES */
+
+#opiniones {
+    width: 100vw;
+    height: auto;
+    grid-row: 4/5 ;
+    padding: 24px;
+    background-color: #2A2828;
+}
+
+.opiniones__contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 16px 0px;
+}
+
+.opiniones_card {
+    width: 80vw;
+    height: auto;
+    background-color: #fff;
+    padding: 16px 20px;
+    text-align: center;
+    margin: 24px 0px;
+}
+
+.opiniones_card .stars {
+    color: peru;
+    margin: 16px;
+
+}
+
+.opiniones_card h3 {
+    color: #692121;
+}
+
+/* Responsive Opiniones */
+
+@media screen and (min-width:1200px) {
+    
+    .opiniones__contenido {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 32px 0px;
+        padding: 0px 32px;
+    }
+    
+    .opiniones_card {
+        width: 30%;
+        margin: 24px;
+        padding: 20px;
+    }
+
+    .opiniones_card p{
+        font-size: 18px;
+    }
+    
+    .opiniones_card .stars {
+        font-size: 20px;
+    
+    }
+    
+    .opiniones_card h3 {
+        font-size: 20px;
+    }
+
+}
+
+
+/* IMG */
+
+#tours__img-baja {
+    height: 200px;
+    grid-row: 5/6;
+    background-image: url("../img-museo/vista-muro-chan-chan.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+
+/* Responsive Opiniones */
+
+@media screen and (min-width:1200px) {
+    #tours__img-baja {
+        height: 300px;
+        background-position: center;
+    }   
+}
+
+/* --------------------ESTILO ACTIVIDADES---------------*/
+
+#body__activ {
+    width: 100vw;
+    height: auto;
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    /* border: 2px solid chartreuse; */
+}
+
+/* SECCION TALLERES */
+
+#taller {
+    background-color: rgb(70, 16, 16) ;
+    height: auto;
+    width: 100vw;
+    padding: 24px;
+    }
+
+.cards-talleres {
+    width: 100%;
+    height: auto;
+    display: flex;
+    overflow-x: scroll;
+    padding: 24px 0px;
+    }
+
+.card__taller {
+    background-color: #fff;
+    width: 75vw;
+    height: auto;
+    display: grid; ;
+    margin: 8px;
+    }
+    
+.card__img-taller {
+    background-image: url("../img-museo/niños-arqueologia-taller.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #C79665;
+    background-blend-mode: multiply;
+    width: 75vw;
+    height: 55vh;
+    grid-row: 1/3;
+    display: flex;
+    padding: 16px;
+
+}
+
+.card__titulo {
+    color: #FFFFFF;
+    font-size: 26px;
+    width: 75vw;
+    font-weight: bold;
+    line-height: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.card__info {
+    width: 75vw;
+    color: #000;
+    background-color: #FFFFFF;
+    height: 28vh;
+    display: flex;
+    padding: 15px;
+}
+
+.card__info div {
+    width: 50%;
+    margin: 16px 8px;
+}
+
+.card__info h4 {
+    color: #692121;
+    padding: 16px 0px;
+}
+
+
+/* Responsive Talleres */
+
+@media screen and (min-width:1200px) {
+    
+    .cards-talleres {
+        width: 100%;
+        height: auto;
+        display: flex;
+        overflow-x: scroll;
+        padding: 24px 24px;
+        }
+
+    .card__taller {
+        background-color: #fff;
+        width: 40vw;
+        height: auto;
+        display: grid; ;
+        margin: 16px;
+        }
+        
+    .card__img-taller {
+        width: 25vw;
+        padding: 16px;
+    
+    }
+    
+    .card__titulo {
+        font-size: 24px;
+        line-height: 1.1;
+    }
+    
+    .card__info {
+        width: 100%;
+        color: #000;
+        background-color: #FFFFFF;
+        height: auto;
+        display: flex;
+        padding: 20px 15px;
+    }
+    
+    .card__info div {
+        width: 50%;
+        margin: 16px 16px;
+    }
+    
+    .card__info h4 {
+        color: #692121;
+        padding: 16px 0px;
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .card__info p {
+        font-size: 18px;
+        text-align: center;
+    }
+
+}
+
+
+/* SECCION GALERIA */
+
+#galerias {
+    width: 100vw;
+    height: auto;
+    padding: 24px;
+}
+
+.galerias_nav {
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 32px 0px;
+}
+
+.galerias_nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.galerias_nav li {
+    padding: 8px;
+}
+
+.galerias_nav .febrero {
+    display: none;
+}
+
+.galerias_nav .marzo {
+    display: none;
+}
+
+.galerias_nav .todos {
+    text-align: center;
+    font-size: 16px;
+    font-weight: lighter;
+    margin: 0px 8px;
+}
+
+.galerias_nav .enero {
+    font-size: 16px;
+    color: #692121;
+    font-weight: bold;
+    margin: 0px 8px;
+}
+
+.galerias_nav i {
+    color: #692121;
+    font-size: 18px;
+}
+
+.fotos {
+    display: flex;
+    justify-content: center;
+}
+
+.galerias_fotos {
+    width: 80vw;
+    height: auto;
+    display: grid;
+    grid-template-rows: 40vw 40vw;
+    grid-template-columns: 50% 50%;
+    gap: 16px;
+
+}
+
+.galerias_fotos img {
+    width: 100%;
+}
+
+
+.img-5 {
+    display: none;
+}
+
+.img-6 {
+    display: none;
+}
+
+.mas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 32px;
+}
+
+.mas .btn__mas {
+    text-align: center;
+    font-weight: lighter;
+    font-size: 18px;
+    color: rgb(70, 16, 16);
+    background-color: rgba(0, 255, 255, 0);
+    border:rgba(0, 0, 0, 0);
+    border-bottom: 1px solid #692121;
+}
+
+/* Responsive Galeria */
+
+@media screen and (min-width:1200px) {
+
+    
+    .galerias_nav {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 32px 0px;
+    }
+    
+    .galerias_nav ul {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .galerias_nav li {
+        padding: 8px;
+    }
+    
+    .galerias_nav .febrero {
+        display: block;
+        font-size: 20px;
+    }
+    
+    .galerias_nav .marzo {
+        display: block;
+        font-size: 20px;
+    }
+    
+    .galerias_nav .todos {
+        text-align: center;
+        font-size: 20px;
+        font-weight: lighter;
+        margin: 0px 8px;
+    }
+    
+    .galerias_nav .enero {
+        font-size: 20px;
+        color: #692121;
+        font-weight: bold;
+        margin: 0px 8px;
+    }
+    
+    .galerias_nav i {
+        color: #692121;
+        font-size: 32px;
+    }
+    
+    .galerias_fotos {
+        width: 60%;
+        height: auto;
+        display: grid;
+        grid-template-rows: 50% 50%;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 16px;
+    
+    }
+    
+    .galerias_fotos img {
+        width: 100%;
+    }
+    
+    
+    .img-5 {
+        display: block;
+    }
+    
+    .img-6 {
+        display: block;
+    }
+    
+    .mas {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 32px;
+    }
+    
+    .mas .btn__mas {
+        text-align: center;
+        font-weight: lighter;
+        font-size: 18px;
+        color: rgb(70, 16, 16);
+        background-color: rgba(0, 255, 255, 0);
+        border:rgba(0, 0, 0, 0);
+        border-bottom: 1px solid #692121;
+    }
+
+}
+
+
+/* -----------------------ESTILO CONTACTANOS-------------------- */
+
+
+#contacto {
+    width: 100vw;
+    height: auto;
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    border: 2px solid chartreuse;
+}
+
+
+/* SECCION CONTACTO */
+
+#contactanos {
+    width: 100vw;
+    height: auto;
+    padding: 64px 32px;
+    background-color: #181818;
+    color: #FFFFFF;
+    font-weight: lighter;
+}
+
+.formulario {
+    height: auto;
+}
+
+.fieldset {
+    border: #000;
+}
+
+.fieldset legend {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nombre {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    margin: 16px 0px;
+}
+
+.nombre input {
+    height: 5vh;
+}
+
+.fonomail {
+    display: flex;
+    margin: 16px 0px;
+}
+
+.fonomail div {
+    font-size: 18px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fonomail div input {
+    height: 5vh;
+}
+
+.medios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    margin: 24px 0px;
+    padding: 8px 0px;
+}
+
+.medios p {
+    margin: 8px 0px;
+}
+
+.medios .opciones {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin: 8px;
+}
+
+.asunto {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+.asunto input {
+    height: 5vh;
+}
+
+.mensaje {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    margin: 16px 0px;
+}
+
+.paisnews {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 24px 0px;
+}
+
+.pais {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pais select {
+    height: 3vh;
+}
+
+
+.suscribirse {
+    width: 60%;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.suscribirse label {
+    width: 75%;
+}
+
+.botones {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.botones input{
+    background-color: #692121;
+    border: #000;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 8px 10px;
+    margin: 0px 16px;
+}
+
+/* Responsive Contacto */
+
+@media screen and (min-width:1200px) {
+
+#contactanos {
+    width: 100vw;
+    background-image: url("../img-museo/img-hero-section.png");
+    background-color: #09090991;
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center;
+    padding: 64px;
+}
+
+.formulario {
+    width: 50%;
+}
+
+}
+
+/*
+
+.formulario {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+}
+
+.nombre {
+} */
+
+/* .fonomail {
+    display: flex;
+}
+
+.medios {
+}
+
+.opciones {
+    display: flex;
+}
+
+ */ 

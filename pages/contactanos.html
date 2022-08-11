@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Museo Chan Chan-Tours</title>
+    
+        <!-- Fuente Roboto -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+        <!-- Link al boostrap icon -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        <!-- Link al CSS -->
+        <link rel="stylesheet" href="../CSS/styles.css">
+    
+    </head>
+
+<body id="contacto">
+    <header id="header__tours">
+        <div class="logo">
+            <img src="../img-museo/logo-chan-chan-blanco.png" alt="logo museo a color" height="50px">
+        </div>
+
+        <div class="burguer">
+            <i class="bi bi-list"></i>
+        </div>
+        
+        <nav class="nav__tours">
+            <ul>
+                <li><a href="../index.html">Museo</a></li>
+                <li><a href="./tours.html">Tours</a></li>
+                <li><a href="./actividades.html">Actividades</a></li>
+                <li class="contacto"><a href="./contactanos.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="contactanos">
+        <form class="formulario">
+            
+            <fieldset class="fieldset">
+                <legend>Contáctanos</legend>
+
+                <div class="nombre">
+                    <label for="nombre-usuario">Nombre:</label>
+                    <input type="text" id="nombre-usuario" name="nombre-usuario">
+                </div>
+
+                <div class="fonomail">
+                    <div>
+                        <label for="telefono-usuario">Teléfono:</label>
+                        <input type="tel" id="telefono-usuario" name="telefono-usuario">
+                    </div>
+
+                    <div>
+                        <label for="email-usuario">Email:</label>
+                        <input type="email" id="email-usuario" name="email-usuario">
+                    </div>
+                </div>
+
+                <div class="medios">
+                    <p> ¿Por qué medio desea ser contactado?</p>
+                    <div class="opciones">
+                        <div>
+                            <label for="contacto-telefono">Telefono</label>
+                            <input type="radio" id="contacto-telefono" name="metodo-contacto" value="metodo-telefono">
+                        </div>
+
+                        <div>
+                            <label for="contacto-email">Email</label>
+                            <input type="radio" id="contacto-email" name="metodo-contacto" value="metodo-email">
+                        </div>
+                    </div>   
+                </div>
+
+                <div class="paisnews">
+                    <div class="pais">
+                        <label for="país-usuario">País</label>
+                        <select name="país-usuario" id="país-usuario">
+                            <option value="default">Seleccionar país</option>
+                            <option value="país-1">Argentina</option>
+                            <option value="país-2">Chile</option>
+                            <option value="país-3">Colombia</option>
+                            <option value="país-4">México</option>
+                            <option value="país-5">Perú</option>
+                        </select>
+                    </div>
+    
+                    <div class="suscribirse">
+                        <label for="news-usuario">¿Quiere suscribirse a nuestro NewsLetter?</label>
+                        <input type="checkbox" id="news-usuario" name="news-usuario">
+                    </div>
+                </div>
+
+                
+
+                <div class="asunto">
+                    <label for="asunto-mensaje">Asunto:</label>
+                    <input type="text" id="asunto-mensaje" name="asunto-mensaje">
+                </div>
+
+                <div class="mensaje">
+                    <label for="mensaje-usuario">Mensaje:</label>
+                    <textarea cols="30" rows="10" id="mensaje-usuario" name="mensaje-usuario"></textarea>
+                </div>
+
+
+                
+                <div class="botones">
+                    <input type="reset" value="Limpiar">
+                    <input type="submit" value="Enviar">
+                </div>
+
+            
+            </fieldset>
+
+        </form>
+    </section>
+
+    <footer>
+            
+        <div class="nav-footer"> 
+            <a href="./index.html">MUSEO</a>
+            <a href="./pages/tours.html">TOURS</a>
+            <a href="./pages/actividades.html">ACTIVIDADES</a>
+            <a href="./pages/contactanos.html">CONTÁCTANOS</a>
+        </div>
+
+
+        <div class="footer__redes">
+            <div class="iconos-redes">
+                <h3>Redes</h3>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-twitter"></i>      
+        </div>
+
+        <div class="footer__suscribete">
+            <div class="sus__texto">
+                <h4> Suscríbete</h4>
+                <P>Para recibir más información y novedades déjanos tu correo</P>
+            </div>
+
+                <form class="formulario" action="action_page.php">
+                    <div class="campo-correo">
+                        <div class="correo__container">
+                            <input type="text" placeholder="Ingresa tu correo" name="mail" required>
+                        </div>
+                        <div class="correo__boton">
+                            <input type="submit" value="Enviar">
+                        </div>
+                    </div>
+                </form>
+        </div>
+
+        <div class="datos-footer">
+            <div class="footer__contacto">
+                <img src="../img-museo/logo-chan-chan-blanco.png" width="150">
+            </div>
+            <p>museochanchan@gob.pe <br>
+                + 11 111 111 111 <br>
+                Neque ad commodi pariatur quis tempore</p>
+        </div>
+    </footer>
+
+</body>
