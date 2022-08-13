@@ -10,6 +10,7 @@
 body{
     font-family: 'Roboto', sans-serif;
 }
+
 footer {
     position: static;
 bottom: 0px;
@@ -25,10 +26,14 @@ bottom: 0px;
 .nombre-seccion-light {
     color: darkred;
     font-weight:bold; 
+    font-size: 16px}
+.nombre-seccion-dark {
+    color: #ffffff;
+    font-weight: lighter;
     font-size: 16px;
     transition-delay: 100ms;
-
 }
+
 .nombre-seccion-dark {
     color: #ffffff;
     font-weight: lighter;
@@ -86,8 +91,8 @@ bottom: 0px;
     padding-left: 16px;
     padding-right: 16px;
     position: fixed;
-    z-index: 3;
-}
+    z-index: 3;}
+
 
 .burguer {
     width: 30px;
@@ -161,7 +166,6 @@ ul li a {
 background-color: #e9c7c7;
 padding: 8px 12px;
 border-radius: 5px;
-;
 }
 
 .nav .contacto a {
@@ -245,6 +249,7 @@ align-items: flex-end;
     width: 100vw;
     margin: 120px 36px ;
     padding-right: 600px;
+    overflow: hidden;
     overflow: hidden;    
     transition-delay: 8ms;
 }
@@ -1069,7 +1074,6 @@ margin: 8px 0px;
     .datos-footer p {
         font-size: 18px;
     }
-    
 }
 
 
@@ -1134,7 +1138,9 @@ margin: 8px 0px;
         display: flex;
         justify-content: flex-start;
         padding-left: 24px;
-    }
+    }  
+}
+
     
     .nav__tours .contacto a{
         background-color: #692121;
@@ -1152,11 +1158,7 @@ margin: 8px 0px;
         background-color: #e9c7c7;
         padding: 8px 12px;
         border-radius: 5px;
-        ;
         }
-
-}
-
 
 
 /* UBICACION Y HORARIOS */
@@ -1168,6 +1170,7 @@ margin: 8px 0px;
     padding: 24px;
     grid-row: 2/3 ;
 }
+
 
 .ubicacion__contenido {
     width: 100%;
@@ -1955,6 +1958,9 @@ margin: 8px 0px;
 .botones input{
     background-color: #692121;
     border: #000;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 8px 10px;
     border-radius: 8px;
     color: #ffffff;
     font-size: 16px;
@@ -1980,10 +1986,10 @@ margin: 8px 0px;
     width: 50%;
 }
 
+}
+
+
 .botones input:hover {
     background-color: #C79665;
 }
-
-}
-
 
