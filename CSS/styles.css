@@ -9,7 +9,10 @@
 /* -------------AJUSTES GENERALES--------------*/
 body{
     font-family: 'Roboto', sans-serif;
-
+}
+footer {
+    position: static;
+bottom: 0px;
 }
 
 /* ----------------AJUSTES BODY---------------------- */
@@ -22,11 +25,17 @@ body{
 .nombre-seccion-light {
     color: darkred;
     font-weight:bold; 
-    font-size: 16px}
+    font-size: 16px;
+    transition-delay: 100ms;
+
+}
 .nombre-seccion-dark {
     color: #ffffff;
     font-weight: lighter;
-    font-size: 16px}
+    font-size: 16px;   
+    transition-delay: 100ms;
+}
+
 .raya-seccion-light {
     background-color: darkred;
     height: 3px;
@@ -77,6 +86,7 @@ body{
     padding-left: 16px;
     padding-right: 16px;
     position: fixed;
+    z-index: 3;
 }
 
 .burguer {
@@ -129,6 +139,7 @@ ul li a {
     position: fixed; 
     box-shadow: -1px 5px 16px -3px rgba(0,0,0,0.72);
     color: #000;
+    z-index: 3
 }
 
 .burguer {
@@ -139,10 +150,18 @@ ul li a {
     display: inline-block;
     justify-content: right;
     grid-area: navbar;
+    transition-duration: 100ms;
 }
 
 .nav a {
     color: #000;
+}
+
+.nav a:hover {
+background-color: #e9c7c7;
+padding: 8px 12px;
+border-radius: 5px;
+;
 }
 
 .nav .contacto a {
@@ -152,6 +171,11 @@ ul li a {
     padding: 8px 16px;
     border-radius: 10px;
 }
+
+.nav .contacto a:hover {
+    background-color: #C79665;
+}
+
 
 #header .logo {
     -webkit-filter: invert(100%);
@@ -186,6 +210,7 @@ align-items: flex-end;
     width: 80vw;
     color: #FFFFFF;
     margin: 80px 0px ;
+    transition-delay: 500ms;
 }
 
 .hero__titulo {
@@ -220,7 +245,8 @@ align-items: flex-end;
     width: 100vw;
     margin: 120px 36px ;
     padding-right: 600px;
-    overflow: hidden;
+    overflow: hidden;    
+    transition-delay: 8ms;
 }
 
 .hero__titulo {
@@ -262,6 +288,7 @@ align-items: flex-end;
     justify-content: center;
     align-items: center;
     margin: 16px;
+    transition-delay: 200ms;
 }
 
 .datos-sc__cita img {
@@ -271,6 +298,7 @@ align-items: flex-end;
 .datos-sc__texto {
     font-size: 18px;
     text-align: justify;
+    transition-delay: 10ms;
 }
 
 .datos-sc__texto p{
@@ -290,6 +318,11 @@ display: none;
     font-weight: 200;
     font-size: 14px;
     padding: 4px 10px;
+}
+
+.boton-ver-mas:hover{
+    background-color: #C89466;
+    border: 0px;
 }
 
  /* responsive significado cultural 1200px */
@@ -314,11 +347,13 @@ display: none;
         width: 50vw;
         font-size: 38px;
         padding: 64px;
+        transition-delay: 3ms;
     }
     
     
     .datos-sc__texto {
         width: 50vw;
+        transition-delay: 10ms;
     }
     
     #seccion-sc button {
@@ -355,6 +390,7 @@ display: none;
     align-content: center;
     align-items: center;
     margin-bottom: 20px;
+    transition-delay: 100ms;
 }  
 
 .sh-img {
@@ -365,6 +401,7 @@ display: none;
     background-position: right;
     background-size: cover;
     background-repeat: no-repeat;
+    transition-delay: 50ms;
 }
 
 .datos-sh__texto-1 h3 {
@@ -384,6 +421,9 @@ display: none;
 
 .datos-sh__segundo-bloque hr {
     width: 80%;
+    transition-delay: 8ms;
+    transition-duration: 2s;
+    transition-delay: 300ms;
 }
 
 .datos-sh__segundo-bloque {
@@ -493,6 +533,7 @@ display: none;
     display: flex;
     flex-direction: column;
     padding-top: 60px ;
+    transition-delay: 300ms;
 }
 
 .datos-sh .datos-sh__tercer-bloque h3 {
@@ -524,6 +565,8 @@ display: none;
     padding: 0px 8px;
     display: flex;
     overflow-x: scroll;
+    transition-delay: 300ms;
+    transition-duration: 500ms;
 }
 
 
@@ -551,6 +594,8 @@ display: none;
     width: 100%;
     height: 40%;
     box-shadow: 0px -4px 15px #2a2828be;
+    transition-delay: 200ms;
+    transition-duration: 500ms;
 }
 
 .card__datos h3 {
@@ -630,6 +675,8 @@ display: none;
     padding: 0px 8px;
     display: flex;
     overflow-x: scroll;
+    transition-delay: 300ms;
+    transition-duration: 500ms;
 }
 
 .card2 {
@@ -671,6 +718,8 @@ display: none;
     width: 100%;
     color: #FFFFFF;
     padding: 16px;
+    transition-delay: 500ms;
+    transition-duration: 500ms;
 }
 
 .card2__bloque2 h3 {
@@ -772,6 +821,7 @@ display: none;
     background-repeat: no-repeat;
     grid-area: f1c1;
     align-items: center;
+    transition-delay: 200ms;
 }
 .logos-inst .img2 {
     width: 100%;
@@ -781,6 +831,7 @@ display: none;
     background-repeat: no-repeat;
     background-position: center;
     grid-area: f1c2;
+    transition-delay: 400ms;
 }
 
 .logos-inst .img3 {
@@ -791,6 +842,7 @@ display: none;
     background-repeat: no-repeat;
     background-position: center;
     grid-area: c1f1;
+    transition-delay: 600ms;
 }
 
 .logos-inst .img4 {
@@ -801,6 +853,7 @@ display: none;
     background-repeat: no-repeat;
     background-position: center;
     grid-area: c2f2;
+    transition-delay: 800ms;
 }
 
 /* responsive institucionales */
@@ -854,6 +907,8 @@ footer {
     align-items: center;
     margin-top: 16px;
     margin-bottom: 16px;
+    transition-delay: 600ms;
+    transition-duration: 400ms;
 }
 .nav-footer a{
 text-decoration: none;
@@ -956,6 +1011,12 @@ margin: 8px 0px;
         padding: 16px 0px;
     }
 
+    .nav-footer a:hover {
+        background-color: #141414;
+        padding: 10px 8px;
+        border-radius: 8px;
+    }
+
     .footer__redes {
     display: flex;
     margin: 64px;    
@@ -1007,7 +1068,8 @@ margin: 8px 0px;
     
     .datos-footer p {
         font-size: 18px;
-    }    
+    }
+    
 }
 
 
@@ -1058,6 +1120,7 @@ margin: 8px 0px;
     
     #header__tours .nav__tours {
         display: block;
+        transition-duration: 500ms;
     }
 
     .nav__tours a {
@@ -1071,8 +1134,30 @@ margin: 8px 0px;
         display: flex;
         justify-content: flex-start;
         padding-left: 24px;
-    }  
+    }
+    
+    .nav__tours .contacto a{
+        background-color: #692121;
+        color: #FFFFFF;
+        font-weight: bold;
+        padding: 8px 16px;
+        border-radius: 10px;    
+    }
+
+    .nav__tours .contacto a:hover {
+        background-color: #C79665;
+    }
+
+    .nav__tours a:hover {
+        background-color: #e9c7c7;
+        padding: 8px 12px;
+        border-radius: 5px;
+        ;
+        }
+
 }
+
+
 
 /* UBICACION Y HORARIOS */
 
@@ -1118,6 +1203,8 @@ margin: 8px 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition-delay: 10ms;
+    transition-duration: 300ms;
 }
 
 .ubicacion__bloque1 .geo-icon {
@@ -1224,6 +1311,8 @@ margin: 8px 0px;
     line-height: 2.5;
     font-size: 18px;
     margin-bottom: 32px;
+    transition-delay: 100ms;
+    transition-duration: 100ms;
 }
 
 .tarifas__tabla thead .categoria__1 {
@@ -1413,6 +1502,11 @@ margin: 8px 0px;
     display: grid; ;
     margin: 8px;
     }
+
+.card__taller:hover {
+    transform: scale(1.1);
+
+}
     
 .card__img-taller {
     background-image: url("../img-museo/niños-arqueologia-taller.jpg");
@@ -1684,6 +1778,10 @@ margin: 8px 0px;
     .galerias_fotos img {
         width: 100%;
     }
+
+    #galerias .fotos .galerias_fotos img:hover {
+        transform: scale(1.1);
+    }
     
     
     .img-5 {
@@ -1857,9 +1955,10 @@ margin: 8px 0px;
 .botones input{
     background-color: #692121;
     border: #000;
+    border-radius: 8px;
     color: #ffffff;
     font-size: 16px;
-    padding: 8px 10px;
+    padding: 8px 12px;
     margin: 0px 16px;
 }
 
@@ -1881,33 +1980,10 @@ margin: 8px 0px;
     width: 50%;
 }
 
+.botones input:hover {
+    background-color: #C79665;
 }
 
-/*
-
-.formulario {
-    display: flex;
-    justify-content: flex-end;
 }
 
-.fieldset {
-    display: flex;
-    flex-direction: column;
-    align-items:flex-start;
-}
 
-.nombre {
-} */
-
-/* .fonomail {
-    display: flex;
-}
-
-.medios {
-}
-
-.opciones {
-    display: flex;
-}
-
- */ 

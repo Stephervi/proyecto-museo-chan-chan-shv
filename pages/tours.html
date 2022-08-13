@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <!-- Link al boostrap icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- Link aol animaciones -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Link al CSS -->
     <link rel="stylesheet" href="../CSS/styles.css">
 
@@ -28,11 +30,12 @@
             <i class="bi bi-list"></i>
         </div>
         
-        <nav class="nav__tours">
+        <nav class="nav__tours" data-aos="zoom-in">
             <ul>
                 <li><a href="../index.html">Museo</a></li>
                 <li><a href="./tours.html">Tours</a></li>
                 <li><a href="./actividades.html">Actividades</a></li>
+                <li> <a href="./faq.html">FAQ</a></li>
                 <li class="contacto"><a href="./contactanos.html">Contacto</a></li>
             </ul>
         </nav>
@@ -40,16 +43,17 @@
 
 
     <section id="ubicacion">
-        <div class="nombre-seccion-dark">
+        <div class="nombre-seccion-dark" data-aos="fade-right">
             <h2>UBICACIÓN Y <br> HORARIOS </h2>
         </div>
         <hr class="raya-secciones-dark" align="left">
 
         <div class="ubicacion__contenido">
-            <div class="ubicacion__bloque2">
+            <div class="ubicacion__bloque2" data-aos="zoom-in">
                 <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d7899.974486778466!2d-79.07453592609562!3d-8.102780254911666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smuseo%20chan%20chan!5e0!3m2!1ses!2spe!4v1659034226031!5m2!1ses!2spe" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div class="ubicacion__bloque1">
+            <div class="ubicacion__bloque1" data-aos="fade-up"
+            data-aos-duration="3000">
                 <div class="geo-icon">
                     <i class="bi bi-geo-alt-fill"></i>
                 </div>
@@ -102,13 +106,13 @@
 
     <section id="tarifas">
 
-        <div class="nombre-seccion-light">
+        <div class="nombre-seccion-light" data-aos="fade-right">
             <h2>TARIFAS</h2>
         </div>
         <hr class="raya-seccion-light" align="left">
 
         <div class="tarifas__contenido">
-                <table class="tarifas__tabla">
+                <table class="tarifas__tabla" data-aos="zoom-in-up">
                     <thead>
                         <tr>
                             <th class="categoria__1" colspan="2">PERUANOS</th>
@@ -135,7 +139,7 @@
         
                 </table>
         
-                <table class="tarifas__tabla">
+                <table class="tarifas__tabla" data-aos="zoom-in-up">
                     <thead>
                         <tr>
                             <th class="categoria__2" colspan="2" >EXTRANJEROS</th>
@@ -160,7 +164,7 @@
                     </tbody>
                 </table>
         
-                <table class="tarifas__tabla">
+                <table class="tarifas__tabla" data-aos="zoom-in-up">
                     <thead>
         
                         <tr>
@@ -200,13 +204,14 @@
 
 
     <section id="opiniones">
-        <div class="nombre-seccion-dark">
+        <div class="nombre-seccion-dark" data-aos="fade-right">
             <h2>OPINIONES</h2>
         </div>
         <hr class="raya-secciones-dark" align="left">
 
-        <div class="opiniones__contenido">
-            <div class="opiniones_card">
+        <div class="opiniones__contenido" data-aos="zoom-in">
+            <div class="opiniones_card" data-aos="fade-up"
+            data-aos-duration="800">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore atque unde nemo at? Quia optio possimus esse qui saepe vitae molestias, perferendis ratione expedita sunt error. Aliquam fuga minus rem!</p>
                 
                 <div class="stars">
@@ -220,7 +225,8 @@
                 <h3>Lorem Ipsum Dolor.</h3>
             </div>
                     
-            <div class="opiniones_card">
+            <div class="opiniones_card" data-aos="fade-up"
+            data-aos-duration="800">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore atque unde nemo at? Quia optio possimus esse qui saepe vitae molestias, perferendis ratione expedita sunt error. Aliquam fuga minus rem!</p>
                 
                 <div class="stars">
@@ -234,7 +240,8 @@
                 <h3>Lorem Ipsum Dolor.</h3>
             </div>
                     
-            <div class="opiniones_card">
+            <div class="opiniones_card" data-aos="fade-up"
+            data-aos-duration="800">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore atque unde nemo at? Quia optio possimus esse qui saepe vitae molestias, perferendis ratione expedita sunt error. Aliquam fuga minus rem!</p>
                 <div class="stars">
                     <i class="bi bi-star-fill"></i>
@@ -254,23 +261,25 @@
 
     <footer>
             
-        <div class="nav-footer"> 
-            <a href="./index.html">MUSEO</a>
-            <a href="./pages/tours.html">TOURS</a>
-            <a href="./pages/actividades.html">ACTIVIDADES</a>
-            <a href="./pages/contactanos.html">CONTÁCTANOS</a>
+        <div class="nav-footer" data-aos="zoom-in"> 
+            <a href="../index.html">MUSEO</a>
+            <a href="./tours.html">TOURS</a>
+            <a href="./actividades.html">ACTIVIDADES</a>
+            <a href="./pages/faq.html">FAQ</a>
+            <a href="./contactanos.html">CONTÁCTANOS</a>
         </div>
 
 
         <div class="footer__redes">
             <div class="iconos-redes">
                 <h3>Redes</h3>
-                <i class="bi bi-instagram"></i>
-                <i class="bi bi-facebook"></i>
-                <i class="bi bi-twitter"></i>      
+                <i class="bi bi-instagram" data-aos="zoom-in"></i>
+                <i class="bi bi-facebook" data-aos="zoom-in"></i>
+                <i class="bi bi-twitter" data-aos="zoom-in"></i>      
         </div>
 
-        <div class="footer__suscribete">
+        <div class="footer__suscribete" data-aos="fade-up"
+        data-aos-duration="800">
             <div class="sus__texto">
                 <h4> Suscríbete</h4>
                 <P>Para recibir más información y novedades déjanos tu correo</P>
@@ -288,7 +297,8 @@
                 </form>
         </div>
 
-        <div class="datos-footer">
+        <div class="datos-footer" ata-aos="fade-up"
+        data-aos-duration="800">
             <div class="footer__contacto">
                 <img src="../img-museo/logo-chan-chan-blanco.png" width="150">
             </div>
@@ -297,5 +307,10 @@
                 Neque ad commodi pariatur quis tempore</p>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
 
 </body>
