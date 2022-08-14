@@ -12,6 +12,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
         <!-- Link al boostrap icon -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        <!-- Link aol animaciones -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <!-- Link al CSS -->
         <link rel="stylesheet" href="../CSS/styles.css">
     
@@ -27,11 +29,13 @@
             <i class="bi bi-list"></i>
         </div>
         
-        <nav class="nav__tours">
+
+        <nav class="nav__tours" data-aos="zoom-in">
             <ul>
                 <li><a href="../index.html">Museo</a></li>
                 <li><a href="./tours.html">Tours</a></li>
                 <li><a href="./actividades.html">Actividades</a></li>
+                <li> <a href="./faq.html">FAQ</a></li>
                 <li class="contacto"><a href="./contactanos.html">Contacto</a></li>
             </ul>
         </nav>
@@ -43,12 +47,15 @@
             <fieldset class="fieldset">
                 <legend>Contáctanos</legend>
 
-                <div class="nombre">
+                <div class="nombre" data-aos="fade-up"
+                data-aos-duration="800">
                     <label for="nombre-usuario">Nombre:</label>
                     <input type="text" id="nombre-usuario" name="nombre-usuario">
                 </div>
 
-                <div class="fonomail">
+
+                <div class="fonomail" data-aos="fade-up"
+                data-aos-duration="800">
                     <div>
                         <label for="telefono-usuario">Teléfono:</label>
                         <input type="tel" id="telefono-usuario" name="telefono-usuario">
@@ -60,7 +67,8 @@
                     </div>
                 </div>
 
-                <div class="medios">
+                <div class="medios" data-aos="fade-up"
+                data-aos-duration="800">
                     <p> ¿Por qué medio desea ser contactado?</p>
                     <div class="opciones">
                         <div>
@@ -75,7 +83,8 @@
                     </div>   
                 </div>
 
-                <div class="paisnews">
+                <div class="paisnews" data-aos="fade-up"
+                data-aos-duration="800">
                     <div class="pais">
                         <label for="país-usuario">País</label>
                         <select name="país-usuario" id="país-usuario">
@@ -94,21 +103,21 @@
                     </div>
                 </div>
 
-                
-
-                <div class="asunto">
+                <div class="asunto" data-aos="fade-up"
+                data-aos-duration="800">
                     <label for="asunto-mensaje">Asunto:</label>
                     <input type="text" id="asunto-mensaje" name="asunto-mensaje">
                 </div>
 
-                <div class="mensaje">
+
+                <div class="mensaje" data-aos="fade-up"
+                data-aos-duration="800">
                     <label for="mensaje-usuario">Mensaje:</label>
                     <textarea cols="30" rows="10" id="mensaje-usuario" name="mensaje-usuario"></textarea>
                 </div>
-
-
                 
-                <div class="botones">
+                <div class="botones" data-aos="fade-up"
+                data-aos-duration="800">
                     <input type="reset" value="Limpiar">
                     <input type="submit" value="Enviar">
                 </div>
@@ -121,23 +130,24 @@
 
     <footer>
             
-        <div class="nav-footer"> 
-            <a href="./index.html">MUSEO</a>
-            <a href="./pages/tours.html">TOURS</a>
-            <a href="./pages/actividades.html">ACTIVIDADES</a>
-            <a href="./pages/contactanos.html">CONTÁCTANOS</a>
+        <div class="nav-footer" data-aos="zoom-in"> 
+            <a href="../index.html">MUSEO</a>
+            <a href="./tours.html">TOURS</a>
+            <a href="./actividades.html">ACTIVIDADES</a>
+            <a href="./contactanos.html">CONTÁCTANOS</a>
         </div>
 
 
         <div class="footer__redes">
             <div class="iconos-redes">
                 <h3>Redes</h3>
-                <i class="bi bi-instagram"></i>
-                <i class="bi bi-facebook"></i>
-                <i class="bi bi-twitter"></i>      
+
+                <i class="bi bi-instagram" data-aos="zoom-in"></i>
+                <i class="bi bi-facebook" data-aos="zoom-in"></i>
+                <i class="bi bi-twitter" data-aos="zoom-in"></i>      
         </div>
 
-        <div class="footer__suscribete">
+        <div class="footer__suscribete" data-aos="fade-up">
             <div class="sus__texto">
                 <h4> Suscríbete</h4>
                 <P>Para recibir más información y novedades déjanos tu correo</P>
@@ -155,7 +165,8 @@
                 </form>
         </div>
 
-        <div class="datos-footer">
+        <div class="datos-footer" ata-aos="fade-up"
+        data-aos-duration="800">
             <div class="footer__contacto">
                 <img src="../img-museo/logo-chan-chan-blanco.png" width="150">
             </div>
@@ -164,5 +175,12 @@
                 Neque ad commodi pariatur quis tempore</p>
         </div>
     </footer>
+
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
 
 </body>
