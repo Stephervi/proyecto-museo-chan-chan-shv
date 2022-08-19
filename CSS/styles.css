@@ -9,13 +9,21 @@
 /* -------------AJUSTES GENERALES--------------*/
 body{
     font-family: 'Roboto', sans-serif;
-
 }
 
-footer {
-    position: static;
-bottom: 0px;
+.nav-link {
+    color: #FFFFFF;
 }
+
+.contacto .nav-link {
+    background-color: #692121;
+    border-radius: 10px;
+    padding: 12px 64px;
+}
+
+.collapse .navbar-nav
+
+
 
 /* ----------------AJUSTES BODY---------------------- */
 
@@ -205,7 +213,6 @@ border-radius: 5px;
 
 .hero {
 height: 100vh;
-min-width: 320px;
 background-image: url("../img-museo/img-hero-mobile.png");
 background-color: rgba(17, 17, 17, 0.427);
 background-blend-mode: soft-light;
@@ -218,9 +225,7 @@ align-items: flex-end;
 }
 
 .hero__info {
-    width: 80vw;
     color: #FFFFFF;
-    margin: 80px 0px ;
     transition-delay: 500ms;
 }
 
@@ -229,7 +234,6 @@ align-items: flex-end;
     font-weight: bold;
     line-height: 1.2;
     text-align: center;
-    margin-bottom: 16px;
 }
 
 .hero__subtitulo {
@@ -244,35 +248,18 @@ align-items: flex-end;
 @media screen and (min-width:1200px) {
 
 .hero {
-    height: 100vh;
-    width: 100vw;
-    background-image: url("../img-museo/img-hero-section.png");
-    background-color: rgba(17, 17, 17, 0.447);
-    background-size: cover;
-    }
-
-
-.hero__info {
-    width: 100vw;
-    margin: 120px 36px ;
-    padding-right: 600px;
-    overflow: hidden;
-    overflow: hidden;    
-    transition-delay: 8ms;
-}
+    background-image: url("../img-museo/img-hero-section.png")
+}    
 
 .hero__titulo {
-    width: auto;
+    padding-left: 60px;
     font-size: 34px;
     text-align: left;
-    margin-left: 64px;
-    margin-bottom: 20px;
-    overflow: hidden;
 }
 
 .hero__subtitulo {
+    padding-left: 60px;
     font-size: 26px;
-    margin-left: 64px;
     text-align: left;
 }
 }
@@ -439,6 +426,7 @@ display: none;
 }
 
 .datos-sh__segundo-bloque {
+    width: 85vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -670,6 +658,9 @@ display: none;
     }
 
 
+
+
+
 /* PRINCIPALES EXHIBICIONES */
 
 #seccion-exhibiciones {
@@ -807,7 +798,31 @@ display: none;
 
 /* --seccion-institucional--*/
 
-#seccion-institucional {
+.logo1 {
+    background-color: #fff;
+    /* border: 1px solid yellowgreen; */
+    display: flex;
+    justify-content: center;
+}
+.logo1 img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+@media screen and (min-width:1200px) {
+    .logo1 img {
+width: 200px;
+height: 200px;
+    }
+}
+
+
+
+/* ANTES: */
+
+
+/* #seccion-institucional {
     width: 100vw;
     height: auto;
     margin-top: 32px;
@@ -870,7 +885,7 @@ display: none;
 
 /* responsive institucionales */
 
-@media screen and (min-width:1200px) {
+/* @media screen and (min-width:1200px) {
     #seccion-institucional {
         width: 100vw;
         height: auto;
@@ -900,11 +915,12 @@ display: none;
     .logos-inst .img4 {
         background-size: 180px;
     }
-}
+} */
 
 
 
 /* FOOTER */
+
 
 footer {
     background-color: #090909;
@@ -912,23 +928,22 @@ footer {
     height: auto;
 }
 
-.nav-footer {
+.blinks {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    margin-top: 16px;
-    margin-bottom: 16px;
-    transition-delay: 600ms;
-    transition-duration: 400ms;
 }
-.nav-footer a{
+
+.navfoot a{
 text-decoration: none;
 font-weight: lighter;
 font-size: 16px;
 color: #FFFFFF;
 margin: 16px 8px;
+text-align: center;
+padding: 8px 16px;
 }
+
+/* ------ */
 
 .footer__redes h3{
     display: none;
@@ -938,14 +953,21 @@ margin: 16px 8px;
     background-color: #FFFFFF;
     color: #000;
     font-size: 24px;
-    padding: 16px 64px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+}
+
+.iconos-redes i {
+    margin: 12px;
 }
 
 .footer__suscribete {
     color: #FFFFFF;
-    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 
 .footer__suscribete p {
@@ -969,8 +991,9 @@ margin: 8px 0px;
     align-items: center;
     margin-bottom: 16px;
 }
+
 .correo__container input{
-    width: 60vw;
+    width: 70vw;
     background-color: #FFFFFF;
     color: #000;
     font-size: 12px;
@@ -979,19 +1002,23 @@ margin: 8px 0px;
 }
 
 .correo__boton input{
-    width: 100px;
+    width: 30vw;
     height: 40px;
     background-color: #444444;
     color: #FFFFFF;
 }
 
-.footer__contacto {
-    display: flex;
-    justify-content: center;
-}
 
 .datos-footer {
     padding-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__logo {
+    margin-top: 16px ;
 }
 
 .datos-footer p {
@@ -1013,24 +1040,19 @@ margin: 8px 0px;
         align-items: center;
     }
 
-    .nav-footer {
-        width: 50vw;
+    .footdata{
+        width: 100%;
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        padding: 16px 0px;
+        justify-content:space-around ;
+        align-items: center;
     }
 
-    .nav-footer a:hover {
+    .navfoot a:hover {
         background-color: #141414;
-        padding: 10px 8px;
         border-radius: 8px;
     }
 
     .footer__redes {
-    display: flex;
     margin: 64px;    
     }
 
@@ -1040,18 +1062,15 @@ margin: 8px 0px;
     }
     
     .iconos-redes {
+        width:fit-content;
         background-color: #090909;
         color: #ffffff;
         font-size: 24px;
-        padding: 16px 64px;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
     
-    .footer__suscribete {
-        margin: 0px 48px;
-    }
 
     .footer__suscribete h4 {
         font-size: 24px;
@@ -1092,19 +1111,16 @@ margin: 8px 0px;
 
 #body__tours {
     height: auto;
-    display: grid;
-    grid-template-rows: repeat(7, auto);
     /* border: 2px solid chartreuse;     */
 }
 
 /* HEADER TOURS */
 
 #header__tours {
-    width: 100vw;
     height: 80px;
+    width: 100vw;
     background-color: #000;
     color: #FFFFFF;
-    grid-row: 1/2;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1182,11 +1198,9 @@ margin: 8px 0px;
 /* UBICACION Y HORARIOS */
 
 #ubicacion {
-    width: 100vw;
     height: auto;
     background-color: #692121;
     padding: 24px;
-    grid-row: 2/3 ;
 }
 
 .ubicacion__contenido {
@@ -1300,9 +1314,7 @@ margin: 8px 0px;
 /* TARIFAS */
 
 #tarifas {
-    width: 100vw;
     height: auto;
-    grid-row: 3/4;
     margin: 24px 0px;
 }
 
@@ -1396,9 +1408,7 @@ margin: 8px 0px;
 /* OPINIONES */
 
 #opiniones {
-    width: 100vw;
     height: auto;
-    grid-row: 4/5 ;
     padding: 24px;
     background-color: #2A2828;
 }
@@ -1469,7 +1479,6 @@ margin: 8px 0px;
 
 #tours__img-baja {
     height: 200px;
-    grid-row: 5/6;
     background-image: url("../img-museo/vista-muro-chan-chan.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -2008,4 +2017,3 @@ margin: 8px 0px;
 .botones input:hover {
     background-color: #C79665;
 }
-
